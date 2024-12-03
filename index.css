@@ -1,0 +1,210 @@
+.fredericka-the-great-regular {
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Fredericka the Great", serif;
+    box-sizing: border-box;
+}
+:root {
+    --backgroud-color: #000000;
+    --text-color: #999;
+    --title-color: #fff;
+}
+.BarreHaut{
+    width: 100%;
+    height: 100%;
+}
+.BarreHaut video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    z-index: -1;
+}
+
+.BarreMillieu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    top: 40vh;
+    transform: translateY(-50%);
+}
+
+.BarreMillieu h1{
+    font-size: 4em;
+    color: #ffffff;
+}
+.BarreMillieu span{
+    color: #e8c500;
+}
+.BarreMillieu a:hover{
+    color: #000;
+    background-color: #e8c500;
+    border: 2px solid #000;
+}
+header {
+
+    background-color: var(--backgroud-color);
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; 
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+.image-container {
+    width: 100vw;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; 
+    top: 0px; 
+    left: 0;
+    z-index: 1; 
+    cursor: pointer;
+}
+#logo-img {
+    width: 100%;
+    height: 110px;
+    background-color: transparent;
+}
+nav ul {
+    list-style: none;
+    font-size: 1.5em;
+}
+nav ul li {
+    display: inline-flex;
+    margin: 5px 15px;
+}
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+.logo {
+    position: absolute;
+    top: 52vh; 
+    left: 50%;
+    transform: translateX(-50%); 
+    z-index: 10; 
+}
+.logo.open img {
+    display: none; 
+}
+.menu {
+    display: none; 
+    width: 100%;  
+    background-color: var(--backgroud-color);
+    border-radius: 10px;
+    z-index: 9;
+}
+.menu.open {
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu li {
+    list-style: none;
+    text-align: center;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+.menu li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+.logo.open:before {
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    top: 15px;  
+    right: 10px; 
+    cursor: pointer;
+}
+
+.close-btn {
+    position: absolute;
+    top: 3px;  
+    right: 10px;  
+    font-size: 40px;  
+    color: #fff;  
+    cursor: pointer;  
+    display: none; 
+    z-index: 11;
+}
+.menu.open + .close-btn {
+    display: block; 
+    color: #e8c500;
+}
+#contact-links {
+    display: inline-block; 
+}
+body.dark-mode #contact-links {
+    display: none;
+}
+
+@media (max-width: 920px) {
+
+    /* Réduire encore plus la taille de certains éléments */
+    .presentation {
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .presentation span {
+        font-size: 0.7em;
+    }
+
+    .presentation p {
+        font-size: 0.4em;
+    }
+    .presentation a {
+        font-size: 0.9em;
+    }
+
+    /* Adapter le logo pour mobile */
+    #logo-img {
+        max-width: 120px;
+    }
+
+
+    /* Menu burger */
+    nav ul {
+        font-size: 1.3em;
+        display: none;
+         /* Par défaut caché */
+    }
+
+    .menu.open {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .burger {
+        display: block;
+    }
+    .close-btn{
+        top: 0.6em;
+    }
+}
+
