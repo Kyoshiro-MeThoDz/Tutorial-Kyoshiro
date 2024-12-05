@@ -1,69 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css?v=0.3">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Taprom&display=swap"
-    rel="stylesheet">
-    <link rel="icon" href="../portefolio/photo/bylogo.png">
-    <title>Video d'intro</title>
+        rel="stylesheet">
     <link rel="icon" href="./photo/bylogo.png">
-    <script src="./js/burger.js" defer></script>
+    <title>Index</title>
+    <script src="../Tutorial-Kyoshiro/js/slash.js" defer></script>
+    <script src="../Tutorial-Kyoshiro/js/burger.js" defer></script>
 </head>
 
-
 <body>
+    <header>
+        <nav>
+      
+          <div class="image-container">
+                <span class="logo" id="logo">
+                    <img src="../Tutorial-Kyoshiro/photo/bsr2.png" alt="Logo" id="logo-img">
+                </span>
+          </div>
+  
+          <div class="burger" id="burger"></div>
+  
+          <ul id="menu" class="menu">
+                <li><a href="../Tutorial-Kyoshiro/ninja/ninja.html">START</a></li>
+          </ul>
 
+          <div class="close-btn" id="close-btn">
+                <img src="../Tutorial-Kyoshiro/photo/bsr1.png" alt="bsr1" id="logo-img2">            
+          </div>
+        
+        </nav>
+    </header>
 
-  <header>
-    <nav>
-        <div class="image-container">
-            <span class="logo" id="logo">
-                <img src="./photo/bylogo1.png" alt="Logo" id="logo-img">
-            </span>
-        </div> 
-        <div class="burger" id="burger"></div>
-        <ul id="menu" class="menu">
-            <li><a href="./acceuil/Acceuil.html">Acceuil</a></li>
-            <li><a href="./présentation/presentation.html">Présentation</a></li>
-            <li><a href="./compétence/competence.html">Compétence</a></li>
-            <li><a href="./expérience/expérience.html">Expérience</a></li>
-        </ul>
-        <div class="close-btn" id="close-btn">X</div>
-    </nav>
-</header>
-
-
-      <div class="BarreHaut">
+    <div class="BarreHaut">
+        
       <video autoplay loop muted playsinline class="video">
-            <source src="./video/loot.mp4" type="video/mp4">
+            <source src="../Tutorial-Kyoshiro/video/noir.mp4" type="video/mp4">
       </video>
-    <br> 
-      <div class="BarreMillieu">
-        <h1>Je suis : 
-          <br>
-           <span class="animation"></span>
-        </h1>
+
+      <div class="bdo">
+            <h1 class="ninja" contenteditable data-heading="ninja">ninja</h1>
+            <span class="logo1" id="logo1">
+                <img src="../Tutorial-Kyoshiro/photo/bdoLettre1.png" alt="Logo" id="logo-img1">
+            </span>
       </div>
-    </div>
+  
+     </div>
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('.animation', {
-        strings: ['Developer.', 'Gamer.', 'Designer.', 'Guitariste.', 'Yohan Barbary.'],
-        loop: true,
-        typeSpeed: 110,
-        backSpeed: 20,
-    });
-    </script>
-
-</body>
-</html>
+    </body>
+   </html>
