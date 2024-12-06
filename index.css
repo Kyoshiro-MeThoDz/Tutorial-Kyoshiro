@@ -5,23 +5,19 @@
     font-family: "Fredericka the Great", serif;
     box-sizing: border-box;
 }
-
 :root {
     --backgroud-color: #000000;
     --text-color: #999;
     --title-color: #fff;
 }
-
 .video {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Remplir l'écran sans déformer la vidéo */
-    z-index: -1; /* Assurez-vous que la vidéo est en arrière-plan */
+    overflow: clip;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; 
+    z-index: -1; 
 }
-/* Body and page styling */
 body {
     animation: bg 1s forwards;
     animation-delay: 2s;
@@ -29,8 +25,6 @@ body {
     height: 100vh;
     overflow: hidden;
 }
-
-/* Navigation bar */
 header {
     background-color: var(--backgroud-color);
     position: fixed;
@@ -39,12 +33,10 @@ header {
     width: 100%;
     z-index: 10;
 }
-
 nav {
     display: flex;
     justify-content: space-between;
 }
-
 .bsr1 {
     top: 3px;
     right: 10px;
@@ -52,7 +44,6 @@ nav {
     color: #fff;
     z-index: 11;
 }
-
 .image-container {
     width: 100vw;
     display: flex;
@@ -64,7 +55,6 @@ nav {
     z-index: 1;
     cursor: pointer;
 }
-
 .bdo {
     width: 100vw;
     display: flex;
@@ -78,7 +68,7 @@ nav {
 }
 
 #logo-img {
-    width: 100%;
+    width: 100px;
     height: 110px;
     background-color: transparent;
 }
@@ -122,7 +112,8 @@ nav ul li a {
 
 .logo1 {
     position: absolute;
-    top: 65vh;
+    
+    top: 150px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
@@ -134,7 +125,7 @@ nav ul li a {
 
 .menu {
     display: none;
-    width: 100%;
+    width: 100vw;
     background-color: var(--backgroud-color);
     border-radius: 10px;
     z-index: 9;
@@ -192,15 +183,14 @@ nav ul li a {
     animation: animatext 1s;
     animation-delay: 2s;
     position: absolute;
-    top: 150px;
+    top: 55vh;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 600;
     text-transform: uppercase;
     margin: 0;
 }
-
 /* Pseudo-éléments before et after pour l'effet de barre */
 .ninja::before,
 .ninja::after {
@@ -223,7 +213,6 @@ nav ul li a {
     animation: slash 2s forwards;
     animation-delay: 3s;
 }
-
 @keyframes slash {
     0% {
         transform: translateX(0);
@@ -233,84 +222,100 @@ nav ul li a {
         transform: translateX(0);
         color: #000;
     }
-
     2% {
         transform: translateX(0);
         height: 49%;
         color: #fff;
     }
-
     50% {
         transform: translateX(0);
     }
-
     100% {
         transform: translateX(-3px);
         height: 49%;
     }
 }
-
 @keyframes bg {
     0% {
         background-color: #fff;
     }
-
     1% {
         background-color: #000;
     }
-
     40% {
         background-color: #fff;
     }
 }
-
 @keyframes animatext {
     0% {
         color: #000;
     }
-
     1% {
         color: #fff;
     }
 }
 
 /* Media Query pour les appareils mobiles (largeur max 768px) */
-@media only screen and (max-width: 968px) {
+@media (width > 350px) and (width < 700px) {
     /* Adapter la taille de la vidéo pour qu'elle ne soit pas déformée */
     .video {
-        object-fit: cover;  /* Assurez-vous que la vidéo couvre bien l'écran */
+        object-fit: cover;
+        object-position: 100%;
         height: 100vh; 
-        width: 100%;/* Maintient la hauteur de la vidéo à 100% de la hauteur de la fenêtre */
+        width: 100vw;
+        position: relative;
     }
-
-    /* Ajuster le texte du titre 'ninja' pour qu'il soit plus petit sur mobile */
-    .ninja {
-        font-size: 3em;
-        position: absolute;  /* Taille de texte réduite */
-        top: 10vh;  /* Position verticale ajustée */
+    body{
+        height: 100vh; 
+        width: 100vw;
+        overflow: hidden;
+        position: relative;
     }
-
-    /* Ajuster la taille du logo */
+ .bdo h1{
+    font-size: 3.5em;
+    top: 75vh;
+    left: 50%; 
+ }
+ .bdo h2{
+    font-size: 4em;
+    top: 84vh;
+    left:50%;
+ }
     #logo-img1 {
         width: 100vw;  /* Réduire la taille du logo */
-        height: auto;  /* Maintenir la proportion */
+        height: 100vh;  /* Maintenir la proportion */
     }
 
     /* Ajuster la position du logo en bas */
     .logo1 {
         top: 80vh; /* Positionner plus bas sur l'écran */
     }
-
     /* Si vous avez des autres éléments qui doivent être ajustés pour les mobiles */
     nav ul li {
-        font-size: 1.2em;  /* Ajuster la taille des liens de menu */
+        font-size: 1.2em;
+        display: inline-flex;  /* Ajuster la taille des liens de menu */
     }
-
+    ul#menu.menu.open {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100vw;
+    }
     .logo {
-        top: 19vh;  /* Positionner plus bas pour que le logo ne soit pas trop haut */
+        top: 29vh;  /* Positionner plus bas pour que le logo ne soit pas trop haut */
     }
     #logo-img2{
         width: 10vw;
         height: 9vw;
+    }
+    .lettreBDO{
+        top: 35px;
+        overflow: hidden;
+        position: absolute;
+        width: 100vw;
+        height: 140px;
+        display: flex;
+        justify-content: center;
     }
 }

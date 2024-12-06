@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./menuSelection.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
   integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
   crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,8 +13,10 @@
   rel="stylesheet">
   <link rel="icon" href="../portefolio/photo/bylogo.png">
   <title>let' go</title>
-    <link rel="stylesheet" href="gear.css">
+    <link rel="stylesheet" href="./menuSelection.css">
     <script src="../js/selectMenu.js" defer></script>
+    <script src="../js/reGear.js" defer></script>
+    <script src="../js/reMinijeux.js" defer></script>
 </head>
 <body>
     
@@ -22,14 +24,14 @@
 </html>
 <main>
     <ul class='slider'>
-      <li class='item' style="background-image: url('../photo/wallnin9.jpg')">
+      <li class='item img9' style="background-image: url('../photo/wallnin9.jpg')">
         <div class='content'>
-          <h2 class='title'>"N'oubliez Pas le PvE"</h2>
-          <p class='description'> Dans ce sujet, nous allons discuter de l'importance des livres de quêtes dans Black Desert Online et de leur impact sur l'augmentation des stats de famille, tout en rappelant l'importance du PvE pour progresser dans le jeu.  </p>
-          <button>Direction : Le PVE</button>
+          <h2 class='title'>"N'oubliez Pas de vous détendre"</h2>
+          <p class='description'> Dans ce sujet, nous allons explorer les mini-jeux que j'ai créés pour les joueurs, offrant une pause détente tout en rappelant l'importance de savoir se détendre pour progresser dans Black Desert Online.  </p>
+          <button id="gearButtonmj">Direction : Les Mini-jeux</button>
         </div>
       </li>
-      <li class='item' style="background-image: url('../photo/wallnin2.jpg')">
+      <li class='item img1' style="background-image: url('../photo/wallnin2.jpg')">
         <div class='content'>
           <h2 class='title'>"Nous y voilà ! Votre voyage commence ici."</h2>
           <p class='description'> Dans ce menu interactif, vous pourrez choisir le sujet qui vous intéresse. Prenez le temps de parcourir et de consulter la base de données (équipement, quêtes, compétences, cristaux, etc...).  </p>
@@ -42,13 +44,13 @@
           <button>Direction : Les Mécaniques</button>
         </div>
       </li>
-      <li class='item' style="background-image: url('../photo/wallnin1.jpg')">
+      <li class='item img52' style="background-image: url('../photo/wallnin1.jpg')">
         <div class='content'>
           <h2 class='title'>"Comment S'équiper dans BDO : Équipement, Cristaux et Artefacts"</h2>
           <p class='description'>
             Dans ce sujet, nous allons aborder les éléments essentiels à connaître pour bien vous équiper dans Black Desert Online : l'équipement, les cristaux et les artefacts. Ces éléments sont cruciaux pour maximiser vos performances en combat et améliorer vos stats.
           </p>
-          <button>Direction : Le GEAR</button>
+          <button id="gearButton">Direction : Le GEAR</button>
         </div>
       </li>
       <li class='item' style="background-image: url('../photo/wallnin7.jpg')">
@@ -60,7 +62,7 @@
           <button>Direction : Les Buff</button>
         </div>
       </li>
-      <li class='item' style="background-image: url('../photo/wallnin6.jpg')">
+      <li class='item img4' style="background-image: url('../photo/wallnin.webp')">
         <div class='content'>
           <h2 class='title'>"Comment Maîtriser les Combos et Enchaîner les Sorts pour Maximiser votre Efficacité"</h2>
           <p class='description'> Dans ce sujet, nous allons vous guider sur l'art des combos et de l'enchaînement des sorts dans Black Desert Online, afin de devenir plus efficace en combat, que ce soit en PvE ou en PvP.  </p>
