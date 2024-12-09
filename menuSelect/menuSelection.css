@@ -171,9 +171,9 @@
     }
          
     &:nth-child(3) { left: 3%; }
-    &:nth-child(4) { left: calc(3% + 15vh); }
-    &:nth-child(5) { left: calc(3% + 30vh); }
-    &:nth-child(6) { left: calc(3% + 15vh); opacity: 1; }
+    &:nth-child(4) { left: calc(3% + 17vh); }
+    &:nth-child(5) { left: calc(3% + 34vh); }
+    &:nth-child(6) { left: calc(3% + 17vh); opacity: 1; }
    }
    .item.img1 {
     background-position: left 20% top; 
