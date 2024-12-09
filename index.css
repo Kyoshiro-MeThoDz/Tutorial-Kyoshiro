@@ -256,7 +256,7 @@ nav ul li a {
 }
 
 /* Media Query pour les appareils mobiles (largeur max 768px) */
-@media (width > 350px) and (width < 700px) {
+@media screen and (max-width: 700px) {
     /* Adapter la taille de la vidéo pour qu'elle ne soit pas déformée */
     .video {
         object-fit: cover;
