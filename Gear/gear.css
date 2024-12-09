@@ -11,7 +11,7 @@ body{
 }
 .general-container {
     display: flex;
-    height: 500px;
+    height: 450px;
     margin: 0 auto !important;
     width: 100vw;
     top: 10%;
