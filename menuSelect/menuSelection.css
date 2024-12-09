@@ -129,21 +129,21 @@
     flex-direction: column;
    }
     .content {
-    top: 40%;
+    top: 50%;
     left: 0;
     width: 100vw;
     text-align: center;
     padding: 0 20px;
    }
    .content .title {
-    font-size: 24px;
+    font-size: 17px;
    }
    .content .description {
-    font-size: 15px;
+    font-size: 13px;
    }
    .content button {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 16px;
    }
    .slider .item {
     width: 100px;
