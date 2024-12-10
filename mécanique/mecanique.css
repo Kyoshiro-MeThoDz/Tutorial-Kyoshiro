@@ -156,8 +156,8 @@ body{
     padding-left: 3rem;
     padding-right: 3rem;
   }
-.radio:not(:checked) + .content:nth-of-type(1) {
-    background-position: bottom 38.5% center;
+.radio:not(:checked) + .content {
+    background-position:  center;
 }
   .radio:checked + .content {
     box-shadow: 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.3);
