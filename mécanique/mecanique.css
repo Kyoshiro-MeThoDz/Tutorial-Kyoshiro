@@ -27,11 +27,12 @@ body{
   
   .content {
     background: transparent;
-    background-image: url("../photo/buildFap.jpg");
+    background-image: url("../photo/TTS.png");
     background-size: contain; 
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom 45% right;
     border-radius: 20px;
+    top: 5px;
     cursor: pointer;
     background-color: #25282d;
     text-align: center;
@@ -40,10 +41,6 @@ body{
     overflow: hidden;
     position: relative;
     transition: all 0.5s cubic-bezier(0.05, 0.60, 0.39, 0.94);
-  }
-  label.content{
-
-
   }
   
   .content::before {
@@ -67,78 +64,119 @@ body{
   
   .content:nth-of-type(2) {
     background: transparent;
-    background-image: url("../photo/buildFaccu.jpg");  
+    background-image: url("../photo/sa.png");  
     background-size: contain; 
     border-radius: 20px;
+    flex: 1;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom 38% center;
     background-color: #25282d;
   }
   
   .content:nth-of-type(3) {
     background: transparent;
-    background-image: url("../photo/buildFdr.jpg");  
+    background-image: url("../photo/invin.png");  
     background-size: contain;
     border-radius: 20px; 
+    flex: 1;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom 38% center;
     background-color: #25282d;
   }
   
   .content:nth-of-type(4) {
     background: transparent;
-    background-image: url("../photo/buildFeva.jpg");  
-    background-size: contain; 
+    background-image: url("../photo/fg.png");  
+    background-size: contain;  
     border-radius: 20px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom 38% center;
     background-color: #25282d;
   }
   
   .card-title {
-    bottom: 0.9rem;
+    bottom: 2.9rem;
+    text-align: center;
     color: #fff;
     display: flex;
     flex-direction: column;
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     left: 0.1rem;
-    line-height: 1.0em;
+    line-height: 1.2em;
     opacity: 0;
     position: absolute;
     transform: translateX(2rem);
     transition: 290ms cubic-bezier(0.05, 0.62, 0.40, 0.95) 300ms;
     transition-property: opacity, transform;
   }
+  .SA{
+    line-height: 1.1em;
+    font-size: 0.96em;
+  }
+  .invin {
+    line-height: 1.2em;
+    font-size: 0.76em;
+  }
+  .fg{
+    font-size: 0.9em;
+    line-height: 1.1em;
+  }
+  
   
   .title-card{
     top: 2rem;
     color: #fff;
     display: flex;
     flex-direction: column;
-    font-size: 1.2rem;
-    left: 1.5rem;
-    line-height: 1.1;
+    text-align: center;
+    font-size: 1.0rem;
+    left: 0.1rem;
+    line-height: 1.2em;
     opacity: 0;
     position: absolute;
     transform: translateX(2rem);
     transition: 290ms cubic-bezier(0.05, 0.60, 0.42, 0.94) 300ms;
     transition-property: opacity, transform;
-    user-select: none;
-    white-space: nowrap;
   
+  }
+  .SAA{
+    line-height: 1.0em;
+    font-size: 0.96em;
+  }
+  .invin1{
+    line-height: 1.2em;
+    font-size: 0.76em;
+    bottom: 1%;
+  }
+  .fgg{
+    font-size: 0.9em;
   }
   
   .paddT{
     padding-left: 3rem;
     padding-right: 3rem;
   }
-  
+.radio:not(:checked) + .content:nth-of-type(1) {
+    background-position: bottom 38.5% center;
+}
   .radio:checked + .content {
-    border-radius: ;
     box-shadow: 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.3);
     flex: 9;
   }
-  
+  .radio:checked + .content:nth-of-type(2) 
+  {
+    background-size: 75px;
+    background-position: bottom 35% center;
+  }
+  .radio:checked + .content:nth-of-type(3) {
+    background-size: 75px;
+    background-position: bottom 55% center;
+  }
+  .radio:checked + .content:nth-of-type(4) 
+  {
+    background-size: 75px;
+    background-position: bottom 38% center;
+  }
   .radio:checked + .content > .card-title {
     opacity: 1;
     transform: translateX(0);
@@ -275,6 +313,7 @@ nav ul li a {
 
 .logo1 {
     position: absolute;
+    
     top: 150px;
     left: 50%;
     transform: translateX(-50%);
