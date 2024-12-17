@@ -101,28 +101,28 @@ h1 {
 }
 
 /* Modal */
-.movement-modal {
+.skill-modal {
     display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.95);
     z-index: 1000;
-    pointer-events: none;
+    backdrop-filter: blur(8px);
 }
 
 .modal-content {
     position: relative;
-    width: 90%;
-    max-width: 1000px;
-    margin: 50px auto;
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
-    padding: 20px;
-    padding-bottom: 70px;
-    pointer-events: auto;
+    width: 95%;
+    max-width: 1200px;
+    margin: 30px auto;
+    background: linear-gradient(145deg, rgba(20, 20, 20, 0.9), rgba(10, 10, 10, 0.95));
+    border: 2px solid rgba(255, 0, 0, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.15);
 }
 
 /* Style pour les boutons en haut */
@@ -253,5 +253,132 @@ h1 {
     .skill-card h3 {
         font-size: 1.5rem;
         padding: 10px;
+    }
+}
+
+/* Styles de la modal identiques à secretSkill */
+.modal-header {
+    background: linear-gradient(90deg, rgba(40, 40, 40, 0.9), rgba(20, 20, 20, 0.95));
+    padding: 20px;
+    border-bottom: 2px solid rgba(255, 0, 0, 0.2);
+}
+
+.modal-header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.modal-title {
+    margin: 0;
+    color: #ff0000;
+    font-size: 2rem;
+    text-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+    font-weight: bold;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: #ff0000;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0 10px;
+    line-height: 1;
+}
+
+.close-btn:hover {
+    color: #ff3333;
+    transform: scale(1.1);
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.skill-video {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.skill-video video {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.combo-info {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 25px;
+    border: 2px solid rgba(255, 0, 0, 0.2);
+}
+
+.combo-info h3 {
+    color: #ff0000;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+.combo-sequence {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.combo-sequence img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid rgba(255, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 8px;
+    transition: all 0.3s ease;
+}
+
+.combo-sequence img:hover {
+    transform: scale(1.1);
+    border-color: rgba(255, 0, 0, 0.5);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+}
+
+.combo-description {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .modal-content {
+        margin: 15px auto;
+    }
+
+    .modal-title {
+        font-size: 1.5rem;
+    }
+
+    .combo-sequence img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .combo-description {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .modal-body {
+        padding: 15px;
     }
 } 

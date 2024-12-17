@@ -795,3 +795,54 @@ h1 {
         right: 5px;
     }
 }
+
+/* Ajout des nouveaux styles pour le carousel et les boutons */
+.carousel-item {
+    margin-top: 150px; /* Descendre le carousel-item */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    top: 60%; /* Descendre les boutons de navigation */
+    transform: translateY(-50%);
+}
+
+.carousel-preview h1 {
+    margin-top: 100px; /* Descendre le titre dans le preview */
+}
+
+.carousel-preview p {
+    margin-top: 20px; /* Ajouter de l'espace après le titre */
+}
+
+/* Ajuster pour la version mobile */
+@media screen and (max-width: 700px) {
+    .carousel-item {
+        margin-top: 0; /* Réinitialiser pour mobile */
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        top: 50%; /* Réinitialiser pour mobile */
+    }
+
+    .carousel-preview h1 {
+        margin-top: 0; /* Réinitialiser pour mobile */
+    }
+
+    .carousel-preview p {
+        margin-top: 10px; /* Réduire l'espace pour mobile */
+    }
+}
+
+/* Style pour descendre les nav-btn en version desktop */
+.nav-btn {
+    margin-top: 80px;
+}
+
+/* Réinitialiser pour mobile */
+@media screen and (max-width: 700px) {
+    .nav-btn {
+        margin-top: 0;
+    }
+}

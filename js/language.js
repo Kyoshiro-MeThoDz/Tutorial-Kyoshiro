@@ -52,12 +52,34 @@ const translations = {
         
         // Secret Skills page
         'secretSkill': {
+            'title': 'Ninja Secret Arts',
             'secret_arts': 'Secret <span class="ninja">Arts</span>',
-            'serpent_strike': 'Smoke Trap',
-            'silent_assassin': 'Fast Grab',
-            'combo_list': 'Combo Skills',
-            'combo_description_smoke': 'This sequence allows you to be protected while launching a stunning ability.',
-            'combo_description_grab': 'This sequence allows a quick forward projection in perfect invincibility, perfect for grab'
+            'smoke_trap': 'Smoke Trap',
+            'fast_grab': 'Fast Grab',
+            'combo_skills': 'Combo Skills',
+            'close': 'Close',
+            'buff_ap': 'Buff AP + Speed',
+            'modal_title': 'Secret Technique',
+            'combo_sequence': 'Key Sequence'
+        },
+        'title': 'Ninja Awakening Combo',
+        'combo': 'Combo',
+        'awakening': 'Awakening',
+        'pve': 'PVE Combo',
+        'pvp': 'PVP Combo',
+        'sequence': 'Key Sequence',
+        'close': 'Close',
+        'modal_title': 'Combo Technique',
+        'combo_sequence': 'Key Sequence',
+        'close': 'Close',
+        'movement': {
+            'title': 'The Art of Shinobi Movement',
+            'movement_arts': 'The Art of <span class="ninja">Movement</span>',
+            'ghost_step': 'Ghost Step',
+            'silent_charge': 'Silent Charge',
+            'ninja_step': 'Ninja Step',
+            'modal_title': 'Movement Technique',
+            'combo_sequence': 'Key Sequence'
         }
     },
     'fr': {
@@ -113,12 +135,34 @@ const translations = {
         
         // Secret Skills page
         'secretSkill': {
-            'secret_arts': 'Secret <span class="ninja">Arts</span>',
-            'serpent_strike': 'Smoke Trap',
-            'silent_assassin': 'Fast Grab',
-            'combo_list': 'Combo Skills',
-            'combo_description_smoke': 'This sequence allows you to be protected while launching a stunning ability.',
-            'combo_description_grab': 'This sequence allows a quick forward projection in perfect invincibility, perfect for grab'
+            'title': 'Les Arts Secrets du Ninja',
+            'secret_arts': 'Les Arts <span class="ninja">Secrets</span>',
+            'smoke_trap': 'Smoke Trap',
+            'fast_grab': 'Fast Grab',
+            'combo_skills': 'Compétence du combo',
+            'close': 'Fermer',
+            'buff_ap': 'Buff AP + Speed',
+            'modal_title': 'Technique Secrète',
+            'combo_sequence': 'Séquence de touches'
+        },
+        'title': 'Combo Ninja Éveil',
+        'combo': 'Combo',
+        'awakening': 'Éveil',
+        'pve': 'Combo PVE',
+        'pvp': 'Combo PVP',
+        'sequence': 'Séquence de touches',
+        'close': 'Fermer',
+        'modal_title': 'Technique de Combo',
+        'combo_sequence': 'Séquence de touches',
+        'close': 'Fermer',
+        'movement': {
+            'title': 'L\'art du mouvement chez Shinobi',
+            'movement_arts': 'L\'art du <span class="ninja">Mouvement</span>',
+            'ghost_step': 'Ghost Step',
+            'silent_charge': 'Silent Charge',
+            'ninja_step': 'Ninja Step',
+            'modal_title': 'Technique de Mouvement',
+            'combo_sequence': 'Séquence de touches'
         }
     },
     'de': {
@@ -166,7 +210,28 @@ const translations = {
             'years_game': 'Jahre Erfahrung',
             'gears': 'Gears',
             'console': 'Console'
-        }
+        },
+        'title': 'Ninja Erwachen Combo',
+        'combo': 'Combo',
+        'awakening': 'Erwachen',
+        'pve': 'PVE Combo',
+        'pvp': 'PVP Combo',
+        'sequence': 'Tastensequenz',
+        'close': 'Schließen',
+        'secretSkill': {
+            'title': 'Geheime Ninja-Künste',
+            'secret_arts': 'Geheime <span class="ninja">Künste</span>',
+            'smoke_trap': 'Rauchfalle',
+            'fast_grab': 'Schneller Griff',
+            'combo_skills': 'Combo-Fähigkeiten',
+            'close': 'Schließen',
+            'buff_ap': 'Buff AP + Speed',
+            'modal_title': 'Geheime Technik',
+            'combo_sequence': 'Tastensequenz'
+        },
+        'modal_title': 'Combo-Technik',
+        'combo_sequence': 'Tastensequenz',
+        'close': 'Schließen'
     },
     'es': {
         'return': 'Volver',
@@ -213,7 +278,28 @@ const translations = {
             'years_game': 'Años de Experiencia',
             'gears': 'Gears',
             'console': 'Console'
-        }
+        },
+        'title': 'Combo Ninja Despertar',
+        'combo': 'Combo',
+        'awakening': 'Despertar',
+        'pve': 'Combo PVE',
+        'pvp': 'Combo PVP',
+        'sequence': 'Secuencia de teclas',
+        'close': 'Cerrar',
+        'secretSkill': {
+            'title': 'Artes Secretos del Ninja',
+            'secret_arts': 'Artes <span class="ninja">Secretos</span>',
+            'smoke_trap': 'Trampa de Humo',
+            'fast_grab': 'Agarre Rápido',
+            'combo_skills': 'Habilidades de Combo',
+            'close': 'Cerrar',
+            'buff_ap': 'Buff AP + Speed',
+            'modal_title': 'Técnica Secreta',
+            'combo_sequence': 'Secuencia de teclas'
+        },
+        'modal_title': 'Técnica de Combo',
+        'combo_sequence': 'Secuencia de teclas',
+        'close': 'Cerrar'
     },
     'ru': {
         'return': 'Назад',
@@ -240,11 +326,11 @@ const translations = {
             'enter': 'Войти',
             'prev': '←',
             'next': '→',
-            'select_menu': 'Пожалуйста, <span class="ninja">выберите</span> меню'
+            'select_menu': 'ожалуйста, <span class="ninja">выберите</span> меню'
         },
         
         'presentation': {
-            'about_me': 'Об�� <span class="ninja">Мне</span>',
+            'about_me': 'Об <span class="ninja">Мне</span>',
             'digital_ninja': '<span class="ninja">MeThoDz</span> Kyoshiro',
             'full_stack': 'Full Stack Developer',
             'my_journey': 'Мой <span class="ninja">Путь</span>',
@@ -256,11 +342,32 @@ const translations = {
             'in_real': '<span class="ninja">В</span> Жизни',
             'game_role': 'Guild  :  Main',
             'game_adventure': 'Моё <span class="ninja">Приключение</span>',
-            'game_desc': 'Увлечённый BDO и моим классом ниндзя, которым я играю, я исследую игру с той же целью с самого начала: улу��шить мой геймплей ниндзя, класс, которым я увлёкся. Я часто бываю на Arsha и на Арене 1, не стесняйтесь бросить мне вызов!',
+            'game_desc': 'Увлечённый BDO и моей классом ниндзя, которым я играю, я сследую игру с той же целью с самого начала: улучшить мой геймплей ниндзя, класс, которым я увлёкся. Я часто бываю на Arsha и на Арене 1, не стесняйтесь бросить мне вызов!',
             'years_game': 'Лет Опыта',
             'gears': 'Gears',
             'console': 'Console'
-        }
+        },
+        'title': 'Комбо Пробуждение Ниндзя',
+        'combo': 'Комбо',
+        'awakening': 'Пробуждение',
+        'pve': 'PVE Комбо',
+        'pvp': 'PVP Комбо',
+        'sequence': 'Последовательность клавиш',
+        'close': 'Закрыть',
+        'secretSkill': {
+            'title': 'Тайные Искусства Ниндзя',
+            'secret_arts': 'Тайные <span class="ninja">Искусства</span>',
+            'smoke_trap': 'Дымовая Ловушка',
+            'fast_grab': 'Быстрый Захват',
+            'combo_skills': 'Навыки Комбо',
+            'close': 'Закрыть',
+            'buff_ap': 'Buff AP + Speed',
+            'modal_title': 'Секретная техника',
+            'combo_sequence': 'Последователь��ость клавиш'
+        },
+        'modal_title': 'Техника Комбо',
+        'combo_sequence': 'Последовательность клавиш',
+        'close': 'Закрыть'
     }
 };
 
@@ -284,6 +391,9 @@ function updateContent(lang) {
         case 'secretSkill':
             updateSecretSkillPage(lang);
             break;
+        case 'combo':
+            updateComboPage(lang);
+            break;
     }
 }
 
@@ -292,6 +402,7 @@ function getCurrentPage() {
     if (path.includes('menu')) return 'menu';
     if (path.includes('presentation')) return 'presentation';
     if (path.includes('secretSkill')) return 'secretSkill';
+    if (path.includes('combo')) return 'combo';
     return 'index';
 }
 
@@ -390,7 +501,35 @@ function updatePresentationPage(lang) {
 
 function updateSecretSkillPage(lang) {
     const t = translations[lang].secretSkill;
-    // ... mise à jour des éléments de la page secretSkill
+    
+    // Mettre à jour le titre de la page
+    document.title = t.title;
+    
+    // Mettre à jour tous les éléments avec data-lang
+    document.querySelectorAll('[data-lang]').forEach(element => {
+        const key = element.getAttribute('data-lang');
+        // Vérifier si c'est le bouton de retour
+        if (element.classList.contains('menu-style-btn') && key === 'return') {
+            element.textContent = translations[lang].return;
+        } else if (t[key]) {
+            element.innerHTML = t[key];
+        }
+    });
+}
+
+function updateComboPage(lang) {
+    const t = translations[lang];
+    
+    // Mettre à jour le titre de la page
+    document.title = t.title;
+    
+    // Mettre à jour les éléments avec data-lang
+    document.querySelectorAll('[data-lang]').forEach(element => {
+        const key = element.getAttribute('data-lang');
+        if (t[key]) {
+            element.innerHTML = t[key];
+        }
+    });
 }
 
 // Assurez-vous que ces lignes sont présentes au début du fichier

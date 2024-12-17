@@ -8,13 +8,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Données des mouvements
     const skillsData = {
         movement1: {
-            videoSrc: '../video/doublejump.mp4',
+            videoSrc: '../video/infinitemotion.mp4',
             combos: ['doublejump1.png', 'doublejump2.png', 'doublejump3.png'],
-            description: 'Cette technique vous permet d\'effectuer un double saut pour atteindre des zones élevées ou éviter les attaques ennemies.'
+            description: 'Ce mouvement vous permet de vous déplacer infiniment.'
         },
         movement2: {
             videoSrc: '../video/ghoststep.mp4',
-            combos: ['ghoststep1.png', 'ghoststep2.png', 'ghoststep3.png'],
+            combos: ['pnw_skill_0918.webp', 'pnw_skill_2101.webp', 'ghoststep3.png'],
             description: 'Le Ghost Step vous rend momentanément invisible, parfait pour des approches furtives ou des esquives rapides.'
         },
         movement3: {

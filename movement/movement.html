@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'art du mouvement chez Shinobi</title>
+    <title data-lang="title">L'art du mouvement chez Shinobi</title>
     <link rel="stylesheet" href="movement.css">
 </head>
 <body>
@@ -25,48 +25,54 @@
                 </select>
             </div>
             <div class="return-button">
-                <button onclick="window.location.href='../menu/menu.html'" class="menu-style-btn">Retour</button>
+                <button onclick="window.location.href='../menu/menu.html'" class="menu-style-btn" data-lang="return">Retour</button>
             </div>
-            <h1>L'art du <span class="ninja">Mouvement</span></h1>
+            <h1 data-lang="movement_arts">L'art du <span class="ninja">Mouvement</span></h1>
         </header>
 
         <main class="skills-container">
-            <!-- Grille des techniques -->
             <div class="skills-grid">
-                <div class="skill-card" data-skill="movement1">
-                    <h3>Double Saut</h3>
+                <div class="skill-card" data-skill="technique1">
+                    <h3 data-lang="ghost_step">mouvement infinie</h3>
                 </div>
-                <div class="skill-card" data-skill="movement2">
-                    <h3>Ghost Step</h3>
+                <div class="skill-card" data-skill="technique2">
+                    <h3 data-lang="silent_charge">position du samouraï</h3>
                 </div>
-                <div class="skill-card" data-skill="movement3">
-                    <h3>Silent Charge</h3>
+                <div class="skill-card" data-skill="technique3">
+                    <h3 data-lang="ninja_step">déplacement ninja</h3>
                 </div>
             </div>
 
             <!-- Modal pour la vidéo et les combos -->
             <div class="skill-modal" id="skillModal">
                 <div class="modal-content">
-                    <div class="skill-video">
-                        <video id="skillVideo" controls>
-                            <source src="" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="combo-list">
-                        <h2>Séquence de touches</h2>
-                        <div class="combo-sequence">
-                            <!-- Les images de combo seront insérées ici dynamiquement -->
-                        </div>
-                        <div class="combo-description">
-                            <p id="combo-description-text"></p>
+                    <div class="modal-header">
+                        <div class="header-content">
+                            <h2 class="modal-title" data-lang="modal_title">Technique de Mouvement</h2>
+                            <button class="close-btn">&times;</button>
                         </div>
                     </div>
-                    <button class="close-btn menu-style-btn">Fermer</button>
+                    <div class="modal-body">
+                        <div class="skill-video">
+                            <video id="skillVideo" controls>
+                                <source src="" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="combo-info">
+                            <h3 data-lang="combo_sequence">Séquence de touches</h3>
+                            <div class="combo-sequence">
+                                <!-- Les images de combo seront insérées ici dynamiquement -->
+                            </div>
+                            <div class="combo-description">
+                                <p id="combo-description-text"></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
     </div>
     <script src="../js/language.js"></script>
-    <script src="movement.js"></script>
+    <script src="../js/movement.js"></script>
 </body>
 </html> 
