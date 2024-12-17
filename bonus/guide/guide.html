@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Avancé</title>
+    <link rel="stylesheet" href="guide.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="myVideo">
+            <source src="../video/noir.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="language-selector">
+                <select id="langSelect" onchange="changeLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <option value="de">Deutsch</option>
+                    <option value="es">Español</option>
+                    <option value="ru">Русский</option>
+                </select>
+            </div>
+            <div class="return-button">
+                <button onclick="window.location.href='./bonus.html'" class="menu-style-btn">Retour</button>
+            </div>
+            <h1>Guide <span class="ninja">Avancé</span></h1>
+        </header>
+
+        <main class="maintenance-container">
+            <div class="maintenance-content">
+                <div class="ninja-loader"></div>
+                <h2>Site en <span class="ninja">Maintenance</span></h2>
+                <p>Cette section sera disponible prochainement</p>
+                <div class="shuriken-loader">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../js/language.js"></script>
+    <script src="guide.js"></script>
+</body>
+</html> 

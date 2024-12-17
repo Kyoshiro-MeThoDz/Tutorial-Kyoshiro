@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation - Digital Ninja Dojo</title>
+    <link rel="stylesheet" href="presentation.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="myVideo">
+            <source src="../video/noir.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="language-selector">
+                <select id="langSelect" onchange="changeLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <option value="de">Deutsch</option>
+                    <option value="es">Español</option>
+                    <option value="ru">Русский</option>
+                </select>
+            </div>
+            <div class="return-button">
+                <button onclick="window.location.href='../menu/menu.html'" class="menu-style-btn">Retour</button>
+            </div>
+            <h1>About <span class="ninja">Me</span></h1>
+        </header>
+
+        <main class="presentation-content">
+            <div class="profile-section">
+                <div class="profile-image">
+                    <img src="../photo/kyoninjawww.png" alt="Profile">
+                </div>
+                <div class="profile-info">
+                    <h2><span class="ninja">MeThoDz</span> Kyoshiro</h2>
+                    <div class="profile-buttons">
+                        <button class="profile-btn" id="gameBtn">
+                            <span class="ninja">En</span> Jeux
+                        </button>
+                        <button class="profile-btn" id="realBtn">
+                            <span class="ninja">En</span> Vrai
+                        </button>
+                    </div>
+                    
+                    <!-- Contenu "En Jeux" -->
+                    <div class="content-section game-content" style="display: none;">
+                        <p class="role">Guild  :  Main</p>
+                        <div class="skills">
+                            <span class="skill-tag">PvP</span>
+                            <span class="skill-tag">Node War</span>
+                            <span class="skill-tag">Siege War</span>
+                            <span class="skill-tag">Guild Leader</span>
+                        </div>
+                        <div class="description-section">
+                            <h3>My <span class="ninja">Adventure</span></h3>
+                            <p>Passionné de BDO et par ma classe ninja que je main, j'arpente et avance à travers le jeu avec le même but depuis le début : améliorer mon gameplay ninja, cette classe pour laquelle je me suis pris de passion. Je suis souvent sur Arsha et dans l'arène 1, n'hésite pas à venir me défier !</p>
+                            <div class="stats">
+                                <div class="stat-item">
+                                    <span class="stat-number">5</span>
+                                    <span class="stat-label">Years Experience</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">750</span>
+                                    <span class="stat-label">Gears</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">Xbox</span>
+                                    <span class="stat-label">Console</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contenu "En Vrai" -->
+                    <div class="content-section real-content" style="display: none;">
+                        <p class="role">Full Stack Developer</p>
+                        <div class="skills">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                        <div class="description-section">
+                            <h3>My <span class="ninja">Journey</span></h3>
+                            <p>Passionate about web development and digital creation, I specialize in building modern and responsive web applications. With a focus on user experience and clean code, I strive to create innovative solutions.</p>
+                            <div class="stats">
+                                <div class="stat-item">
+                                    <span class="stat-number">1</span>
+                                    <span class="stat-label">Years Experience</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">Front end</span>
+                                    <span class="stat-label">Préférence</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">Javascript</span>
+                                    <span class="stat-label">Meilleur language connu</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../js/language.js"></script>
+    <script src="../js/presentation.js"></script>
+</body>
+</html> 

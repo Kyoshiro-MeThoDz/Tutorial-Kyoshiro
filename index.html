@@ -1,61 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css?v=0.4">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Taprom&display=swap"
-        rel="stylesheet">
-    <link rel="icon" href="./photo/bylogo.png">
-    <title>Index</title>
-    <script src="../Tutorial-Kyoshiro/js/slash.js" defer></script>
-    <script src="../Tutorial-Kyoshiro/js/burger.js" defer></script>
+    <title>Mon Site</title>
+    <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
-    <header>
-        <nav>
-      
-          <div class="image-container">
-                <span class="logo" id="logo">
-                    <img src="../Tutorial-Kyoshiro/photo/bsr2.png" alt="Logo" id="logo-img">
-                </span>
-          </div>
-  
-          <div class="burger" id="burger"></div>
-  
-          <ul id="menu" class="menu">
-                <li><a href="../Tutorial-Kyoshiro/menuSelect/menuSelection.html">START</a></li>
-          </ul>
+    <div class="video-background">
+        <video autoplay muted loop id="myVideo">
+            <source src="./video/noir.mp4" type="video/mp4">
+        </video>
+    </div>
 
-          <div class="close-btn" id="close-btn">
-                <img src="../Tutorial-Kyoshiro/photo/bsr1.png" alt="bsr1" id="logo-img2">            
-          </div>
-        
-        </nav>
-    </header>
+    <div class="content">
+        <header>
+            <div class="language-selector">
+                <select id="langSelect" onchange="changeLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <option value="de">Deutsch</option>
+                    <option value="es">Español</option>
+                    <option value="ru">Русский</option>
+                </select>
+            </div>
+            <div class="identification-button">
+                <button class="menu-style-btn" id="identificationBtn">Connexion</button>
+            </div>
+            <div class="logout-button" style="display: none;">
+                <button class="menu-style-btn" id="logoutBtn">Déconnexion</button>
+            </div>
+            <div class="menu-button">
+                <button class="menu-style-btn menux1" id="menuBtn">Menu</button>
+            </div>
+            <div class="center-logo">
+                <img src="./photo/1715847_0-Photoroom.png" alt="logo" class="logo-icon">
+            </div>
+            <nav class="menu-items" id="menuItems">
+                <button class="close-btn" id="closeBtn">&times;</button>
+                <p class="welcome-text">Welcome to the Shadow Realm, Young <span class="ninja">Ninja</span></p>
+                <ul>
+                    <li><a href="./menu/menu.html" class="start-link">Start</a></li>
+                </ul>
+            </nav>
+            <h1>Path of the <span class="ninja">Ninja</span> Blade</h1>
+            <h2 class="subtitle">The Way of Six <span class="ninja">Katanas</span></h2>
+        </header>
 
-    <div class="BarreHaut">
-        
-      <video autoplay loop muted playsinline class="video">
-            <source src="../Tutorial-Kyoshiro/video/noir.mp4" type="video/mp4">
-      </video>
+        <div class="identification-modal" id="identificationModal">
+            <div class="modal-content">
+                <button class="close-btn" id="closeIdentificationBtn">&times;</button>
+                <div class="form-container">
+                    <form id="registrationForm">
+                        <h2>Inscription</h2>
+                        <div class="form-group">
+                            <input type="text" id="lastName" name="lastName" placeholder="Nom de famille" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="firstName" name="firstName" placeholder="Prénom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="level" name="level" placeholder="Niveau" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="mainClass" name="mainClass" required>
+                                <option value="">Classe principale</option>
+                                <option value="ninja">Ninja</option>
+                                <option value="kunoichi">Kunoichi</option>
+                                <!-- Ajouter autres classes -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="guild" name="guild" placeholder="Guilde" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="platform" name="platform" required>
+                                <option value="">Plateforme</option>
+                                <option value="pc">PC</option>
+                                <option value="ps4">PS4</option>
+                                <option value="xbox">Xbox</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="username" name="username" placeholder="Pseudo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="password" name="password" placeholder="Mot de passe" required>
+                        </div>
+                        <button type="submit" class="submit-btn">S'inscrire</button>
+                    </form>
 
-      <div class="bdo">
-            <h1 class="ninja"  data-heading="Kyoshiro">Kyoshiro</h1>
-            <h2 class="ninja"  data-heading="MeThoDz">MeThoDz</h2>
-            <span class="lettreBDO">
-                <img src="../Tutorial-Kyoshiro/photo/bdoLettre1.png" alt="logo">
-            </span>
-      </div>
-  
-     </div>
+                    <form id="loginForm" style="display: none;">
+                        <h2>Connexion</h2>
+                        <div class="form-group">
+                            <input type="text" id="loginUsername" name="loginUsername" placeholder="Pseudo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="loginPassword" name="loginPassword" placeholder="Mot de passe" required>
+                        </div>
+                        <button type="submit" class="submit-btn">Se connecter</button>
+                    </form>
 
-    </body>
-   </html>
+                    <p class="switch-form">
+                        <a href="#" id="switchForm">Déjà inscrit ? Se connecter</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Kyoshiro MeThoDz</p>
+            <p class="guild">Guilde : Main</p>
+        </footer>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="./js/language.js"></script>
+    <script src="./js/identification.js"></script>
+</body>
+</html> 

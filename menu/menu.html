@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Digital Ninja Dojo</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="myVideo">
+            <source src="../video/noir.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="language-selector">
+                <select id="langSelect" onchange="changeLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <option value="de">Deutsch</option>
+                    <option value="es">Español</option>
+                    <option value="ru">Русский</option>
+                </select>
+            </div>
+            <div class="return-button">
+                <button onclick="window.location.href='../index.html'" class="menu-style-btn">Retour</button>
+            </div>
+            <div class="carousel-preview">
+                <div class="preview-container">
+                    <div class="preview-item" data-index="1">
+                        <img src="../photo/wallnin.webp" alt="Advanced Skills">
+                    </div>
+                    <div class="preview-item" data-index="2">
+                        <img src="../photo/wallnin1.jpg" alt="Shadow Techniques">
+                    </div>
+                    <div class="preview-item" data-index="3">
+                        <img src="../photo/wallnin2.jpg" alt="Master Level">
+                    </div>
+                    <div class="preview-item" data-index="4">
+                        <img src="../photo/wallnin4.jpg" alt="Master Build">
+                    </div>
+                    <div class="preview-item" data-index="5">
+                        <img src="../photo/wallnin6.jpg" alt="Master Gear">
+                    </div>
+                </div>
+            </div>
+            <h1>Your Journey Begins Here</h1>
+            <p class="subtitle-menu">Please <span class="ninja">select</span> a menu</p>
+        </header>
+
+        <main>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item active">
+                        <h2 class="basic-title">Qui suis-je ?</h2>
+                        <p class="basic-desc">Venez me découvrir</p>
+                        <a href="../presentation/presentation.html" class="card-btn">Enter</a>
+                    </div>
+
+                    <div class="carousel-item">
+                        <h2 class="advanced-title">Combo Ninja Éveil</h2>
+                        <p class="advanced-desc">PvE et PvP</p>
+                        <a href="../combo/combo.html" class="card-btn">Enter</a>
+                    </div>
+
+                    <div class="carousel-item">
+                        <h2 class="shadow-title">Les Arts Secrets du Ninja</h2>
+                        <p class="shadow-desc">La voie du Shinobi</p>
+                        <a href="../secretSkill/secretSkill.html" class="card-btn">Enter</a>
+                    </div>
+
+                    <div class="carousel-item">
+                        <h2 class="master-title">L'art du mouvement chez Shinobi</h2>
+                        <p class="master-desc">Devenez une légende</p>
+                        <a href="../movement/movement.html" class="card-btn">Enter</a>
+                    </div>
+
+                    <div class="carousel-item">
+                        <h2 class="master-title">Bonus et Mini Jeux</h2>
+                        <p class="master-desc">Perfectionnement et détente</p>
+                        <a href="../bonus/bonus.html" class="card-btn">Enter</a>
+                    </div>
+                </div>
+
+                <div class="carousel-nav">
+                    <button class="nav-btn prev-btn">&#8592;</button>
+                    <button class="nav-btn next-btn">&#8594;</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../js/language.js"></script>
+    <script src="../js/menu.js"></script>
+</body>
+</html> 

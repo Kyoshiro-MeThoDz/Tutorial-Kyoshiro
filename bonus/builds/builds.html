@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clan Ninja</title>
+    <link rel="stylesheet" href="builds.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="myVideo">
+            <source src="../video/noir.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="language-selector">
+                <select id="langSelect" onchange="changeLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <option value="de">Deutsch</option>
+                    <option value="es">Español</option>
+                    <option value="ru">Русский</option>
+                </select>
+            </div>
+            <div class="return-button">
+                <button onclick="window.location.href='./bonus.html'" class="menu-style-btn">Retour</button>
+            </div>
+            <h1>Clan <span class="ninja">Ninja</span></h1>
+        </header>
+
+        <main class="builds-container">
+            <div class="filter-section">
+                <select id="platformFilter" class="platform-filter">
+                    <option value="all">Toutes les plateformes</option>
+                    <option value="pc">PC</option>
+                    <option value="ps4">PS4</option>
+                    <option value="xbox">Xbox</option>
+                </select>
+            </div>
+
+            <div class="users-section">
+                <h2>Liste des <span class="ninja">Membres</span></h2>
+                <div id="registeredUsers" class="users-list"></div>
+            </div>
+        </main>
+    </div>
+    <script src="../js/language.js"></script>
+    <script src="builds.js"></script>
+</body>
+</html> 

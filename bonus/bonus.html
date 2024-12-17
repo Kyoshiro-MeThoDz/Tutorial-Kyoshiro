@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonus et Mini Jeux</title>
+    <link rel="stylesheet" href="bonus.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="myVideo">
+            <source src="../video/noir.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="language-selector">
+                <select id="langSelect" onchange="changeLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <option value="de">Deutsch</option>
+                    <option value="es">Español</option>
+                    <option value="ru">Русский</option>
+                </select>
+            </div>
+            <div class="return-button">
+                <button onclick="window.location.href='../menu/menu.html'" class="menu-style-btn">Retour</button>
+            </div>
+            <h1>Bonus et <span class="ninja">Mini Jeux</span></h1>
+        </header>
+
+        <main class="choice-container">
+            <div class="main-section">
+                <div class="choice-section">
+                    <div class="choice left-choice" data-choice="perfectionnement">
+                        <h2>Perfectionnement</h2>
+                        <div class="choice-content">
+                            <div class="option">
+                                <h3 onclick="window.location.href='./guide.html'">Guide Avancé</h3>
+                            </div>
+                            <div class="option">
+                                <h3 onclick="window.location.href='./clan.html'">Clan Ninja</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="choice right-choice" data-choice="detente">
+                        <h2>Détente</h2>
+                        <div class="choice-content">
+                            <div class="option" onclick="window.location.href='./minigames.html'">
+                                <h3>Mini Jeux</h3>
+                            </div>
+                            <div class="option" onclick="window.location.href='./photo.html'">
+                                <h3>Mode Photo</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../js/language.js"></script>
+    <script src="bonus.js"></script>
+</body>
+</html> 

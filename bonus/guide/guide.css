@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000;
+    color: white;
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+
+.ninja {
+    color: #ff0000;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+/* Header styles */
+h1 {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+/* Boutons styles */
+.language-selector {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.language-selector select {
+    padding: 8px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.return-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.menu-style-btn {
+    padding: 8px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.menu-style-btn:hover,
+.language-selector select:hover {
+    background: rgba(0, 0, 0, 0.9);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+}
+
+/* Maintenance content */
+.maintenance-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.maintenance-content {
+    text-align: center;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    animation: pulse 2s infinite;
+}
+
+.maintenance-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.maintenance-content p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Shuriken loader animation */
+.shuriken-loader {
+    margin-top: 30px;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shuriken-loader span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.shuriken-loader span::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 0, 0, 0.7);
+    transform-origin: 100% 50%;
+    animation: rotate 1s linear infinite;
+}
+
+.shuriken-loader span:nth-child(1) {
+    transform: rotate(120deg);
+}
+
+.shuriken-loader span:nth-child(2) {
+    transform: rotate(240deg);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 20px rgba(255, 0, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+    }
+}
+
+/* Responsive design */
+@media screen and (max-width: 700px) {
+    .language-selector,
+    .return-button {
+        top: 40px;
+    }
+    
+    .language-selector {
+        right: 10px;
+    }
+    
+    .return-button {
+        left: 10px;
+    }
+
+    h1 {
+        margin-top: 100px;
+        font-size: 2rem;
+    }
+
+    .maintenance-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .maintenance-content p {
+        font-size: 1rem;
+    }
+} 

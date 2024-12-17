@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'art du mouvement chez Shinobi</title>
+    <link rel="stylesheet" href="movement.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="myVideo">
+            <source src="../video/noir.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="language-selector">
+                <select id="langSelect" onchange="changeLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <option value="de">Deutsch</option>
+                    <option value="es">Español</option>
+                    <option value="ru">Русский</option>
+                </select>
+            </div>
+            <div class="return-button">
+                <button onclick="window.location.href='../menu/menu.html'" class="menu-style-btn">Retour</button>
+            </div>
+            <h1>L'art du <span class="ninja">Mouvement</span></h1>
+        </header>
+
+        <main class="skills-container">
+            <!-- Grille des techniques -->
+            <div class="skills-grid">
+                <div class="skill-card" data-skill="movement1">
+                    <h3>Double Saut</h3>
+                </div>
+                <div class="skill-card" data-skill="movement2">
+                    <h3>Ghost Step</h3>
+                </div>
+                <div class="skill-card" data-skill="movement3">
+                    <h3>Silent Charge</h3>
+                </div>
+            </div>
+
+            <!-- Modal pour la vidéo et les combos -->
+            <div class="skill-modal" id="skillModal">
+                <div class="modal-content">
+                    <div class="skill-video">
+                        <video id="skillVideo" controls>
+                            <source src="" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="combo-list">
+                        <h2>Séquence de touches</h2>
+                        <div class="combo-sequence">
+                            <!-- Les images de combo seront insérées ici dynamiquement -->
+                        </div>
+                        <div class="combo-description">
+                            <p id="combo-description-text"></p>
+                        </div>
+                    </div>
+                    <button class="close-btn menu-style-btn">Fermer</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../js/language.js"></script>
+    <script src="movement.js"></script>
+</body>
+</html> 
